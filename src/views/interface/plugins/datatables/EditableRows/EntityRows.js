@@ -36,7 +36,7 @@ const EditableRows = () => {
     fetchData();
   }, []);
 
-  const title = 'Entitys';
+  const title = 'Entities';
   const description = 'Separate rows with edit, delete and add.';
 
   const breadcrumbs = [

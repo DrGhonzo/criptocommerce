@@ -11,7 +11,7 @@ import ControlsAdd from './components/ControlsAdd';
 import ControlsEdit from './components/ControlsEdit';
 import ControlsDelete from './components/ControlsDelete';
 import ControlsSearch from './components/ControlsSearch';
-import ModalAddEdit from './components/ModalAddEdit';
+import ModalAddEdit from './components/EntityModalAddEdit';
 import Table from './components/Table';
 import TablePagination from './components/TablePagination';
 import Routes from '../../../../../routes';

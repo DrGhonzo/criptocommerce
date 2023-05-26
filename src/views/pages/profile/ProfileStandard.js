@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Row, Col, Card, Dropdown, Nav, Form, OverlayTrigger, Tooltip, Tab } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { LAYOUT } from 'constants.js';
 import HtmlHead from 'components/html-head/HtmlHead';
 import BreadcrumbList from 'components/breadcrumb-list/BreadcrumbList';
@@ -8,6 +8,7 @@ import CsLineIcons from 'cs-line-icons/CsLineIcons';
 import useCustomLayout from 'hooks/useCustomLayout';
 import Clamp from 'components/clamp';
 import ProfileChart from './components/ProfileChart';
+
 
 const ProfileStandard = () => {
   const title = 'Profile Standard';
@@ -21,6 +22,9 @@ const ProfileStandard = () => {
 
   useCustomLayout({ layout: LAYOUT.Boxed });
 
+  const { id } = useParams();
+  console.log(id);
+  
   return (
     <>
       <HtmlHead title={title} description={description} />
@@ -29,7 +33,7 @@ const ProfileStandard = () => {
         <Row>
           {/* Title Start */}
           <Col md="7">
-            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell</h1>
+            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell {id}</h1>
             <BreadcrumbList items={breadcrumbs} />
           </Col>
           {/* Title End */}

@@ -17,44 +17,7 @@ const apps = {
   mailbox: lazy(() => import('views/apps/mailbox/Mailbox')),
   tasks: lazy(() => import('views/apps/tasks/Tasks')),
 };
-const pages = {
-  index: lazy(() => import('views/pages/Pages')),
-  authentication: {
-    index: lazy(() => import('views/pages/authentication/Authentication')),
-    login: lazy(() => import('views/pages/authentication/Login')),
-    register: lazy(() => import('views/pages/authentication/Register')),
-    forgotPassword: lazy(() => import('views/pages/authentication/ForgotPassword')),
-    resetPassword: lazy(() => import('views/pages/authentication/ResetPassword')),
-  },
-  blog: {
-    index: lazy(() => import('views/pages/blog/Blog')),
-    home: lazy(() => import('views/pages/blog/BlogHome')),
-    grid: lazy(() => import('views/pages/blog/BlogGrid')),
-    list: lazy(() => import('views/pages/blog/BlogList')),
-    detail: lazy(() => import('views/pages/blog/BlogDetail')),
-  },
-  miscellaneous: {
-    index: lazy(() => import('views/pages/miscellaneous/Miscellaneous')),
-    faq: lazy(() => import('views/pages/miscellaneous/Faq')),
-    knowledgeBase: lazy(() => import('views/pages/miscellaneous/KnowledgeBase')),
-    error: lazy(() => import('views/pages/miscellaneous/Error')),
-    comingSoon: lazy(() => import('views/pages/miscellaneous/ComingSoon')),
-    pricing: lazy(() => import('views/pages/miscellaneous/Pricing')),
-    search: lazy(() => import('views/pages/miscellaneous/Search')),
-    mailing: lazy(() => import('views/pages/miscellaneous/Mailing')),
-    empty: lazy(() => import('views/pages/miscellaneous/Empty')),
-  },
-  portfolio: {
-    index: lazy(() => import('views/pages/portfolio/Portfolio')),
-    home:  lazy(() => import('views/pages/portfolio/PortfolioHome')),
-    detail: lazy(() => import('views/pages/portfolio/PortfolioDetail')),
-  },
-  profile: {
-    index: lazy(() => import('views/pages/profile/Profile')),
-    standard: lazy(() => import('views/pages/profile/ProfileStandard')),
-    settings: lazy(() => import('views/pages/profile/ProfileSettings')),
-  },
-};
+
 const blocks = {
   index: lazy(() => import('views/blocks/Blocks')),
   cta: lazy(() => import('views/blocks/cta/Cta')),
@@ -192,15 +155,6 @@ const routesAndMenuItems = {
       component: interfaces.plugins.datatables.DeviceRows,
       label: 'Devices',
       icon: 'notebook-1',
-    },
-    {
-      path: '/profile',
-      label: 'menu.profile',
-      component: pages.profile.index,
-      subs: [
-        { path: '/standard', label: 'menu.standard', component: pages.profile.standard },
-        { path: '/settings', label: 'menu.settings', component: pages.profile.settings },
-      ],
     },
     {
       path: `${appRoot}/dashboards`,

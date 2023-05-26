@@ -1,5 +1,7 @@
 import { IS_AUTH_GUARD_ACTIVE, DEFAULT_PATHS } from 'config.js';
 
+
+
 const userHasRole = (routeRoles, userRole) => {
   if (!userRole) return false;
   return routeRoles.includes(userRole);
@@ -52,6 +54,8 @@ export const convertToRoutes = ({
 
       if (item.subs) tempItem.exact = true;
 
+     
+
       /* Authentication Guard */
       if (authGuardActive) {
         if (tempItem.roles) tempItem.protected = true;
@@ -83,6 +87,8 @@ export const convertToRoutes = ({
           };
         }
       }
+
+  
 
       if (Object.keys(tempItem).length > 0 && !item.isExternal) {
         if (item.noLayout && noLayout) {
@@ -126,6 +132,8 @@ export const convertToRoutes = ({
       return tempItem;
     };
     items.map(itemMapper);
+
+    
     return routes;
   };
 };

@@ -53,10 +53,11 @@ const EditableRows = () => {
         id: 'view',
         headerClassName: 'empty w-10',
         Cell: ({ row }) => {
+          const { id } = row; // Obtén el ID desde la fila de datos
           return (
             <NavLink
               className="btn btn-primary btn-sm"
-              to='/profile/standard'
+              to={`/profile/${id}`} // Agrega el ID a la URL
             >
               Ver
             </NavLink>

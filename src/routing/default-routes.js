@@ -11,6 +11,8 @@ const InvalidAccess = lazy(() => import('views/default/InvalidAccess'));
 const App = lazy(() => import('App.js'));
 const Home = lazy(() => import('views/default/Home'));
 
+
+
 /*
 { path: "/path", exact: true, component: ViewHome },
 // or

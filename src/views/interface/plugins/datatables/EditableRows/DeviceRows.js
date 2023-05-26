@@ -10,7 +10,7 @@ import ControlsAdd from './components/ControlsAdd';
 import ControlsEdit from './components/ControlsEdit';
 import ControlsDelete from './components/ControlsDelete';
 import ControlsSearch from './components/ControlsSearch';
-import ModalAddEdit from './components/ModalAddEdit';
+import DeviceModalAddEdit from './components/DeviceModalAddEdit';
 import Table from './components/Table';
 import TablePagination from './components/TablePagination';
 
@@ -33,7 +33,7 @@ const EditableRows = () => {
     fetchData();
   }, []);
 
-  const title = 'Entitys';
+  const title = 'Devices';
   const description = 'Separate rows with edit, delete and add.';
 
   const breadcrumbs = [
@@ -46,7 +46,7 @@ const EditableRows = () => {
   const columns = React.useMemo(() => {
     return [
       { Header: 'Name',
-        accessor: 'name',
+        accessor: 'entity',
         sortable: true,
         headerClassName: 'text-muted text-small text-uppercase w-30',
         Cell: ({ cell }) => {
@@ -64,12 +64,12 @@ const EditableRows = () => {
         }
       },
       { Header: 'MAC Address', accessor: 'mac_address', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
-      { Header: 'Status', accessor: 'status', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
-      { Header: 'Customer ID', accessor: 'customer_id', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
-      { Header: 'Email', accessor: 'email', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
-      { Header: 'Address', accessor: 'address', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
-      { Header: 'Location', accessor: 'location', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
-      { Header: 'Phone number', accessor: 'phone_number', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
+      { Header: 'IP Address', accessor: 'ip_address', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
+      { Header: 'Type', accessor: 'type', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
+      { Header: 'Role', accessor: 'role', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
+      { Header: 'Serial', accessor: 'serial_num', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
+      { Header: 'Frimware version', accessor: 'version', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
+      { Header: 'Status', accessor: 'status', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
       {
         Header: '',
         id: 'action',
@@ -137,7 +137,7 @@ const EditableRows = () => {
               </Col>
             </Row>
           </div>
-          <ModalAddEdit tableInstance={tableInstance} />
+          <DeviceModalAddEdit tableInstance={tableInstance} />
         </Col>
       </Row>
     </>

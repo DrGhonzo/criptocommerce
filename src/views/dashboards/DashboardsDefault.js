@@ -209,6 +209,22 @@ const DashboardsDefault = () => {
           <Card className="sh-40 h-lg-100-card">
             <Card.Body className="mb-n2 scroll-out h-100">
               <OverlayScrollbarsComponent options={{ scrollbars: { autoHide: 'leave' }, overflowBehavior: { x: 'hidden', y: 'scroll' } }} className="h-100">
+
+                {/*
+                
+                Juan Pérez - Reinicio del router
+María Rodríguez - Actualización de firmware
+Andrés Gómez - Conexión interrumpida
+Laura López - Restablecimiento de contraseña
+Carlos Martínez - Configuración de red inalámbrica
+Ana Silva - Cambio de dirección IP
+Pedro Morales - Bloqueo de acceso a ciertos sitios web
+Gabriela Fernández - Monitoreo de tráfico de datos
+Luis Medina - Verificación de velocidad de conexión
+Carolina Sánchez - Resolución de problemas de DNS
+David Herrera - Optimización de la calidad de la señal
+                
+                */}
                 <Row className="g-0 mb-2">
                   <Col xs="auto">
                     <div className="sw-3 d-inline-block d-flex justify-content-start align-items-center h-100">
@@ -217,6 +233,14 @@ const DashboardsDefault = () => {
                       </div>
                     </div>
                   </Col>
+                 
+                  <Col xs="auto">
+                    <div className="d-inline-block d-flex justify-content-end align-items-center h-100">
+                      <div className="text-muted ms-2 mt-n1 lh-1-25">Pepe Juarez</div>
+                    </div>
+                  </Col>
+                 
+                 
                   <Col>
                     <div className="d-flex flex-column pt-0 pb-0 ps-3 pe-4 h-100 justify-content-center">
                       <div className="d-flex flex-column">
@@ -224,11 +248,15 @@ const DashboardsDefault = () => {
                       </div>
                     </div>
                   </Col>
+
                   <Col xs="auto">
                     <div className="d-inline-block d-flex justify-content-end align-items-center h-100">
-                      <div className="text-muted ms-2 mt-n1 lh-1-25">18 Dec</div>
+                      <div className="text-muted ms-2 mt-n1 lh-1-25">18 Dec, 12:34</div>
                     </div>
                   </Col>
+                 
+                  
+                  
                 </Row>
                 <Row className="g-0 mb-2">
                   <Col xs="auto">
@@ -238,16 +266,21 @@ const DashboardsDefault = () => {
                       </div>
                     </div>
                   </Col>
+                   <Col xs="auto">
+                    <div className="d-inline-block d-flex justify-content-end align-items-center h-100">
+                      <div className="text-muted ms-2 mt-n1 lh-1-25">María Rodríguez</div>
+                    </div>
+                  </Col>
                   <Col>
                     <div className="d-flex flex-column pt-0 pb-0 ps-3 pe-4 h-100 justify-content-center">
                       <div className="d-flex flex-column">
-                        <div className="text-alternate mt-n1 lh-1-25">Product out of stock: Breadstick</div>
+                        <div className="text-alternate mt-n1 lh-1-25">Actualización de firmware</div>
                       </div>
                     </div>
                   </Col>
                   <Col xs="auto">
                     <div className="d-inline-block d-flex justify-content-end align-items-center h-100">
-                      <div className="text-muted ms-2 mt-n1 lh-1-25">15 Dec</div>
+                      <div className="text-muted ms-2 mt-n1 lh-1-25">15 Dec, 19:20</div>
                     </div>
                   </Col>
                 </Row>

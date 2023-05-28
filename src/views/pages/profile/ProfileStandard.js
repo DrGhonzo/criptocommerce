@@ -52,6 +52,7 @@ const ProfileStandard = () => {
           {/* Title Start */}
           <Col md="7">
             <h1 className="mb-0 pb-0 display-4">Blaine Cottrell</h1>
+            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell</h1>
             <BreadcrumbList items={breadcrumbs} />
           </Col>
           {/* Title End */}
@@ -82,11 +83,7 @@ const ProfileStandard = () => {
                     </div>
                     */}
                     <div className="h5 mb-0">Blaine Cottrell</div>
-                    
-                    <div className="text-muted">Django ID = {id}</div>
-{/*
-                    <div className="text-muted">Executive UI/UX Designer</div>
-*/}
+                    <div className="text-muted">ID = {id}</div>
                     <div className="text-muted">
                       <CsLineIcons icon="pin" className="me-1" />
                       <span className="align-middle">Montreal, Canada</span>

@@ -53,7 +53,12 @@ const EditableRows = () => {
         id: 'view',
         headerClassName: 'empty w-10',
         Cell: ({ row }) => {
-          const { id } = row; // Obtén el ID desde la fila de datos
+
+     
+
+          const  { id } = row.original; // Obtén el ID desde la fila de datos asegurandote que es el ID del SQL
+          
+
           return (
             <NavLink
               className="btn btn-primary btn-sm"

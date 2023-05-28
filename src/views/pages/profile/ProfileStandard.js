@@ -33,7 +33,7 @@ const ProfileStandard = () => {
         <Row>
           {/* Title Start */}
           <Col md="7">
-            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell {id}</h1>
+            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell</h1>
             <BreadcrumbList items={breadcrumbs} />
           </Col>
           {/* Title End */}
@@ -58,11 +58,9 @@ const ProfileStandard = () => {
               <Card.Body>
                 <div className="d-flex align-items-center flex-column mb-4">
                   <div className="d-flex align-items-center flex-column">
-                    <div className="sw-13 position-relative mb-3">
-                      <img src="/img/profile/profile-1.webp" className="img-fluid rounded-xl" alt="thumb" />
-                    </div>
+                    
                     <div className="h5 mb-0">Blaine Cottrell</div>
-                    <div className="text-muted">Executive UI/UX Designer</div>
+                    <div className="text-muted">ID = {id}</div>
                     <div className="text-muted">
                       <CsLineIcons icon="pin" className="me-1" />
                       <span className="align-middle">Montreal, Canada</span>

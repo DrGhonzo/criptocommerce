@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Row, Col, Card, Dropdown, Nav, Form, OverlayTrigger, Tooltip, Tab } from 'react-bootstrap';
 import { NavLink, useParams } from 'react-router-dom';
 import { LAYOUT } from 'constants.js';
@@ -24,6 +24,24 @@ const ProfileStandard = () => {
 
   const { id } = useParams();
   console.log(id);
+
+  
+  const [dataEntity, setData] = React.useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/api/v01/entity');
+        const responseData = await response.json();
+        console.log(responseData);
+        setData(responseData);
+      } catch (error) {
+        console.log('Error al obtener los datos de la API:', error);
+      }
+    };
+  
+    fetchData();
+  }, []);
   
   return (
     <>
@@ -33,7 +51,7 @@ const ProfileStandard = () => {
         <Row>
           {/* Title Start */}
           <Col md="7">
-            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell {id}</h1>
+            <h1 className="mb-0 pb-0 display-4">Blaine Cottrell</h1>
             <BreadcrumbList items={breadcrumbs} />
           </Col>
           {/* Title End */}
@@ -58,11 +76,17 @@ const ProfileStandard = () => {
               <Card.Body>
                 <div className="d-flex align-items-center flex-column mb-4">
                   <div className="d-flex align-items-center flex-column">
+                    {/*
                     <div className="sw-13 position-relative mb-3">
                       <img src="/img/profile/profile-1.webp" className="img-fluid rounded-xl" alt="thumb" />
                     </div>
+                    */}
                     <div className="h5 mb-0">Blaine Cottrell</div>
+                    
+                    <div className="text-muted">Django ID = {id}</div>
+{/*
                     <div className="text-muted">Executive UI/UX Designer</div>
+*/}
                     <div className="text-muted">
                       <CsLineIcons icon="pin" className="me-1" />
                       <span className="align-middle">Montreal, Canada</span>
@@ -76,19 +100,19 @@ const ProfileStandard = () => {
                   </Nav.Link>
                   <Nav.Link className="px-0 border-bottom border-separator-light cursor-pointer" eventKey="projects">
                     <CsLineIcons icon="suitcase" className="me-2" size="17" />
-                    <span className="align-middle">Projects</span>
+                    <span className="align-middle">Router Settings</span>
                   </Nav.Link>
                   <Nav.Link className="px-0 border-bottom border-separator-light cursor-pointer" eventKey="permissions">
                     <CsLineIcons icon="lock-off" className="me-2" size="17" />
-                    <span className="align-middle">Permissions</span>
+                    <span className="align-middle">Security</span>
                   </Nav.Link>
                   <Nav.Link className="px-0 border-bottom border-separator-light cursor-pointer" eventKey="friends">
                     <CsLineIcons icon="heart" className="me-2" size="17" />
-                    <span className="align-middle">Friends</span>
+                    <span className="align-middle">Timeline</span>
                   </Nav.Link>
                   <Nav.Link className="px-0 cursor-pointer" eventKey="about">
                     <CsLineIcons icon="user" className="me-2" size="17" />
-                    <span className="align-middle">About</span>
+                    <span className="align-middle">Network Users</span>
                   </Nav.Link>
                 </Nav>
               </Card.Body>
@@ -109,11 +133,11 @@ const ProfileStandard = () => {
                     <Card className="hover-border-primary">
                       <Card.Body>
                         <div className="heading mb-0 d-flex justify-content-between lh-1-25 mb-3">
-                          <span>Projects</span>
+                          <span>Download</span>
                           <CsLineIcons icon="suitcase" className="text-primary" />
                         </div>
-                        <div className="text-small text-muted mb-1">ACTIVE</div>
-                        <div className="cta-1 text-primary">14</div>
+                        <div className="text-small text-muted mb-1">SPEED</div>
+                        <div className="cta-1 text-primary">50 Mbps</div>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -121,11 +145,11 @@ const ProfileStandard = () => {
                     <Card className="hover-border-primary">
                       <Card.Body>
                         <div className="heading mb-0 d-flex justify-content-between lh-1-25 mb-3">
-                          <span>Tasks</span>
+                          <span>Upload</span>
                           <CsLineIcons icon="check-square" className="text-primary" />
                         </div>
-                        <div className="text-small text-muted mb-1">PENDING</div>
-                        <div className="cta-1 text-primary">153</div>
+                        <div className="text-small text-muted mb-1">SPEED</div>
+                        <div className="cta-1 text-primary">25 Mbps</div>
                       </Card.Body>
                     </Card>
                   </Col>

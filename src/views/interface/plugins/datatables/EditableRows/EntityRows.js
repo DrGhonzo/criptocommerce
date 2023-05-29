@@ -24,7 +24,7 @@ const EditableRows = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/v01/entitys');
+        const response = await fetch('http://127.0.0.1:8000/api/v01/entities');
         const responseData = await response.json();
         console.log(responseData);
         setData(responseData);

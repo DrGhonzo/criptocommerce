@@ -145,15 +145,15 @@ const routesAndMenuItems = {
       ],
     },
     {
-      path: `${appRoot}/entities`,
-      component: interfaces.plugins.datatables.EntityRows,
-      label: 'Entities',
+      path: `${appRoot}/operar`,
+      component: blocks.tabularData,
+      label: 'Operar',
       icon: 'notebook-1',
     },
     {
-      path: `${appRoot}/devices`,
-      component: interfaces.plugins.datatables.DeviceRows,
-      label: 'Devices',
+      path: `${appRoot}/historial`,
+      component: apps.mailbox,
+      label: 'Historial',
       icon: 'notebook-1',
     },
     {
@@ -162,9 +162,9 @@ const routesAndMenuItems = {
       label: 'Admin',
       icon: 'bi-shield-lock-fill',
        subs: [
-        { path: '/default', label: 'menu.default', component: dashboards.default },
-        { path: '/visual', label: 'menu.visual', component: dashboards.visual },
-        { path: '/analytic', label: 'menu.analytic', component: dashboards.analytic },
+        { path: '/default', label: 'Precio divisas', component: dashboards.default },
+        { path: '/visual', label: 'Usuarios', component: dashboards.visual },
+        { path: '/analytic', label: 'Otra tabla', component: dashboards.analytic },
       ],
     },
     /*{

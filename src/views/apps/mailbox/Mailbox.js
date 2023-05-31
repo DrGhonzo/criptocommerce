@@ -16,7 +16,7 @@ import EmailCorrespondence from './components/EmailCorrespondence';
 import { getMailbox, setSelectedMails, setViewingMail } from './mailboxSlice';
 
 const MailboxApp = () => {
-  const title = 'Mailbox';
+  const title = 'Historial de operaciones';
   const description = 'Very basic email application that contains a list page rendering, new&reply layouts and a static details page.';
 
   const breadcrumbs = [

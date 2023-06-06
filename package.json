@@ -83,7 +83,7 @@
     "lint:fix": "eslint ./src --fix",
     "precommit": "lint-staged",
     "concurrently": "concurrently",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build --force",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

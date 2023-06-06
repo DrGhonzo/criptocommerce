@@ -18,8 +18,10 @@ import { TabularDataLabels } from './TabularDataLabels';
 import { TabularDataCheckboxes } from './TabularDataCheckboxes';
 import { TabularDataSummary } from './TabularDataSummary';
 
+import Cotizador from './Calculadora/Cotizador';
+
 const TabularData = () => {
-  const title = 'Tabular Data';
+  const title = 'Operar';
   const description =
     'Tables that are created without using table markup in favour of flex divs that have breakpoint specific classes. They are available in varieties that contain icons, images and texts with or without a scrollbar.';
 
@@ -49,19 +51,29 @@ const TabularData = () => {
   return (
     <>
       <HtmlHead title={title} description={description} />
+
       <Row>
         <Col>
+
+ 
           {/* Title Start */}
           <section className="scroll-section" id="title">
             <div className="page-title-container">
               <h1 className="mb-0 pb-0 display-4">{title}</h1>
               <BreadcrumbList items={breadcrumbs} />
             </div>
+
+
             <Card className="mb-5" body>
-              <Card.Text>{description}</Card.Text>
+              {/* <Card.Text>{description}</Card.Text> */}
+
+             
+
             </Card>
           </section>
           {/* Title End */}
+
+               <Cotizador />
 
           {/* Basic Items Start */}
           <section className="scroll-section" id="basicItems">

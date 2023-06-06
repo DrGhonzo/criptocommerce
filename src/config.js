@@ -7,8 +7,8 @@ export const USE_MULTI_LANGUAGE = true;
 
 // For detailed information: https://github.com/nfl/react-helmet#reference-guide
 export const REACT_HELMET_PROPS = {
-  defaultTitle: 'Acorn Admin Template',
-  titleTemplate: '%s | Acorn Admin Template',
+  defaultTitle: 'Cripto Commerce',
+  titleTemplate: '%s | Cripto Commerce',
 };
 
 export const DEFAULT_PATHS = {
@@ -28,8 +28,8 @@ export const DEFAULT_SETTINGS = {
   MENU_BEHAVIOUR: MENU_BEHAVIOUR.Pinned,
   LAYOUT: LAYOUT.Fluid,
   RADIUS: RADIUS.Rounded,
-  COLOR: THEME_COLOR.LightBlue,
-  NAV_COLOR: NAV_COLOR.Default,
+  COLOR: THEME_COLOR.DarkBlue,
+  NAV_COLOR: NAV_COLOR.Dark,
   USE_SIDEBAR: false,
 };
 

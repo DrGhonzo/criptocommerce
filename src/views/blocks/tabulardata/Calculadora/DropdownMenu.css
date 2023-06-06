@@ -1,0 +1,44 @@
+.lista {
+    /* Estilo predeterminado de la lista */
+    opacity: 1;
+
+    overflow: hidden;
+    transition: 1s;
+    background-color: rgba(189, 189, 189, 0.651);
+    position:absolute;
+    z-index:20;
+
+    /*overflow-y: scroll;  Agrega una barra de desplazamiento vertical */
+  }
+  
+  .lista-open {
+    opacity: 1;
+
+    transition: 1s
+  }
+
+button{
+    border:none;
+    padding:15px;
+    color:white;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */ 
+/* INPUT NUMBER */ 
+
+/* ELIMINO LAS FLECHAS DE ARRIBA ABAJO DEL INPUT TYPE NUMBER */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+    border:none;
+    text-align:right;
+    height: 100px;
+}
+
+input:focus{
+    outline:none;
+}

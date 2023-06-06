@@ -1,10 +1,10 @@
 {
+  "homepage": "https://martincardarilli.github.io/criptocommerce/",
   "name": "acorn-react",
   "version": "1.0.1",
   "private": true,
   "proxy": "http://localhost:3000",
   "dependencies": {
-    "http-proxy-middleware": "^2.0.6",
     "@fullcalendar/bootstrap": "^5.9.0",
     "@fullcalendar/daygrid": "^5.9.0",
     "@fullcalendar/interaction": "^5.9.0",
@@ -24,10 +24,11 @@
     "chartjs-plugin-datalabels": "^2.0.0",
     "chartjs-plugin-streaming": "^2.0.0",
     "clamp-js": "^0.7.0",
-    "classnames": "^2.3.1",
+    "classnames": "^2.3.2",
     "date-fns": "^2.22.1",
     "formik": "^2.2.9",
     "fuse.js": "^6.4.6",
+    "http-proxy-middleware": "^2.0.6",
     "intro.js": "^4.2.2",
     "intro.js-react": "^0.5.0",
     "luxon": "^2.0.1",
@@ -81,7 +82,9 @@
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint ./src --fix",
     "precommit": "lint-staged",
-    "concurrently": "concurrently"
+    "concurrently": "concurrently",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -122,6 +125,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^5.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "2.3.1",

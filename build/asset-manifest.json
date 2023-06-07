@@ -23,7 +23,7 @@
     "static/css/18.eb1c4f44.chunk.css": "/criptocommerce/static/css/18.eb1c4f44.chunk.css",
     "static/js/18.084b33e5.chunk.js": "/criptocommerce/static/js/18.084b33e5.chunk.js",
     "main.js": "/criptocommerce/static/js/main.509cbc3c.chunk.js",
-    "runtime-main.js": "/criptocommerce/static/js/runtime-main.02b07398.js",
+    "runtime-main.js": "/criptocommerce/static/js/runtime-main.87d8ac55.js",
     "static/js/21.1e78c5a4.chunk.js": "/criptocommerce/static/js/21.1e78c5a4.chunk.js",
     "static/js/22.c42c5a5e.chunk.js": "/criptocommerce/static/js/22.c42c5a5e.chunk.js",
     "static/css/23.cc03c7c2.chunk.css": "/criptocommerce/static/css/23.cc03c7c2.chunk.css",
@@ -38,7 +38,7 @@
     "static/js/28.88b3d9b9.chunk.js": "/criptocommerce/static/js/28.88b3d9b9.chunk.js",
     "static/js/29.286fc7a8.chunk.js": "/criptocommerce/static/js/29.286fc7a8.chunk.js",
     "static/js/30.ad4d0cc4.chunk.js": "/criptocommerce/static/js/30.ad4d0cc4.chunk.js",
-    "static/js/31.ceb8d94c.chunk.js": "/criptocommerce/static/js/31.ceb8d94c.chunk.js",
+    "static/js/31.093d9156.chunk.js": "/criptocommerce/static/js/31.093d9156.chunk.js",
     "static/js/32.2136797b.chunk.js": "/criptocommerce/static/js/32.2136797b.chunk.js",
     "static/js/33.2302246c.chunk.js": "/criptocommerce/static/js/33.2302246c.chunk.js",
     "static/js/34.06dcdbe7.chunk.js": "/criptocommerce/static/js/34.06dcdbe7.chunk.js",
@@ -179,7 +179,7 @@
     "static/js/24.f8a9bd6c.chunk.js.LICENSE.txt": "/criptocommerce/static/js/24.f8a9bd6c.chunk.js.LICENSE.txt",
     "static/js/27.c8adb904.chunk.js.LICENSE.txt": "/criptocommerce/static/js/27.c8adb904.chunk.js.LICENSE.txt",
     "static/js/28.88b3d9b9.chunk.js.LICENSE.txt": "/criptocommerce/static/js/28.88b3d9b9.chunk.js.LICENSE.txt",
-    "static/js/31.ceb8d94c.chunk.js.LICENSE.txt": "/criptocommerce/static/js/31.ceb8d94c.chunk.js.LICENSE.txt",
+    "static/js/31.093d9156.chunk.js.LICENSE.txt": "/criptocommerce/static/js/31.093d9156.chunk.js.LICENSE.txt",
     "static/js/32.2136797b.chunk.js.LICENSE.txt": "/criptocommerce/static/js/32.2136797b.chunk.js.LICENSE.txt",
     "static/js/37.5dcc12e2.chunk.js.LICENSE.txt": "/criptocommerce/static/js/37.5dcc12e2.chunk.js.LICENSE.txt",
     "static/js/38.e2b7e257.chunk.js.LICENSE.txt": "/criptocommerce/static/js/38.e2b7e257.chunk.js.LICENSE.txt",
@@ -201,7 +201,7 @@
     "static/media/wise_usd.4cf4e50c.png": "/criptocommerce/static/media/wise_usd.4cf4e50c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.02b07398.js",
+    "static/js/runtime-main.87d8ac55.js",
     "static/js/21.1e78c5a4.chunk.js",
     "static/js/main.509cbc3c.chunk.js"
   ]

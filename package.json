@@ -1,5 +1,4 @@
 {
-  "homepage": "https://martincardarilli.github.io/criptocommerce/",
   "name": "acorn-react",
   "version": "1.0.1",
   "private": true,
@@ -82,9 +81,7 @@
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint ./src --fix",
     "precommit": "lint-staged",
-    "concurrently": "concurrently",
-    "predeploy": "npm run build --force",
-    "deploy": "gh-pages -d build"
+    "concurrently": "concurrently"
   },
   "eslintConfig": {
     "extends": [

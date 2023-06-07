@@ -3,7 +3,6 @@
   "name": "acorn-react",
   "version": "1.0.1",
   "private": true,
-  "proxy": "https://martincardarilli.github.io/criptocommerce/",
   "dependencies": {
     "@fullcalendar/bootstrap": "^5.9.0",
     "@fullcalendar/daygrid": "^5.9.0",

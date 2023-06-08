@@ -21,6 +21,25 @@ import Routes from '../../../../../routes';
 
 const EditableRows = () => {
 
+
+
+/* 
+fecha
+hora
+
+divisa enviada (metodo de pago)
+monto
+
+lo mismo pa recibida
+
+
+aaaaa
+
+
+estado
+
+*/
+  
   const [data, setData] = React.useState([
     { id: 1, name: 'Basler Brot', sales: 213, stock: 15, category: 'Sourdough', tag: 'New' },
     { id: 2, name: 'Bauernbrot', sales: 633, stock: 97, category: 'Multigrain', tag: 'Done' },
@@ -41,7 +60,7 @@ const EditableRows = () => {
     { id: 17, name: 'Baguette', sales: 456, stock: 33, category: 'Sourdough', tag: '' },
     { id: 18, name: 'Guernsey Gâche', sales: 1958, stock: 221, category: 'Multigrain', tag: '' },
     { id: 19, name: 'Bazlama', sales: 858, stock: 34, category: 'Whole Wheat', tag: '' },
-    { id: 20, name: 'Bolillo', sales: 333, stock: 24, category: 'Whole Wheat', tag: '' },
+    { id: 20, name: 'Asdasd', sales: 333, stock: 24, category: 'Whole Wheat', tag: '' },
   ]);
 
    /* useEffect(() => {

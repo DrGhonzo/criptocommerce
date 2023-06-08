@@ -27,7 +27,7 @@ const App = () => {
         
          {/* ESTO ES SOLAMENTE UN PARCHE BIZARRO 
          QUE ANDA DE OJETE PERO ROMPE Y TRAE PROBLEMAS DESPUES PORQUE
-          NO TE DEJA ACCEDER DIRECTAMENTE A UNA SUBPAGINA */}
+          NO TE DEJA ACCEDER DIRECTAMENTE A UNA SUBPAGINA <<-- cual subpagina? comenta bien pelotudo */}
 
 
 

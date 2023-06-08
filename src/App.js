@@ -20,10 +20,22 @@ const App = () => {
   const routes = useMemo(() => getRoutes({ data: routesAndMenuItems, isLogin, userRole: currentUser.role }), [isLogin, currentUser]);
   if (routes) {
     return (
+
+
+      
       <BrowserRouter basename="/criptocommerce">
-      <Layout>
-        <RouteIdentifier routes={routes} fallback={<Loading />} />
-      </Layout>
+        
+         {/* ESTO ES SOLAMENTE UN PARCHE BIZARRO 
+         QUE ANDA DE OJETE PERO ROMPE Y TRAE PROBLEMAS DESPUES PORQUE
+          NO TE DEJA ACCEDER DIRECTAMENTE A UNA SUBPAGINA */}
+
+
+
+
+        <Layout>
+          <RouteIdentifier routes={routes} fallback={<Loading />} />
+        </Layout>
+
       </BrowserRouter>
     );
   }

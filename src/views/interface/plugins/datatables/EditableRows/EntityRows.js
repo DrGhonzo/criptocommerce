@@ -17,11 +17,34 @@ import TablePagination from './components/TablePagination';
 import Routes from '../../../../../routes';
 
 
+
+
 const EditableRows = () => {
 
-  const [data, setData] = React.useState([]);
+  const [data, setData] = React.useState([
+    { id: 1, name: 'Basler Brot', sales: 213, stock: 15, category: 'Sourdough', tag: 'New' },
+    { id: 2, name: 'Bauernbrot', sales: 633, stock: 97, category: 'Multigrain', tag: 'Done' },
+    { id: 3, name: 'Kommissbrot', sales: 2321, stock: 154, category: 'Whole Wheat', tag: '' },
+    { id: 4, name: 'Lye Roll', sales: 973, stock: 39, category: 'Sourdough', tag: '' },
+    { id: 5, name: 'Panettone', sales: 563, stock: 72, category: 'Sourdough', tag: 'Done' },
+    { id: 6, name: 'Saffron Bun', sales: 98, stock: 7, category: 'Whole Wheat', tag: '' },
+    { id: 7, name: 'Ruisreikäleipä', sales: 459, stock: 90, category: 'Whole Wheat', tag: '' },
+    { id: 8, name: 'Rúgbrauð', sales: 802, stock: 234, category: 'Whole Wheat', tag: '' },
+    { id: 9, name: 'Yeast Karavai', sales: 345, stock: 22, category: 'Multigrain', tag: '' },
+    { id: 10, name: 'Brioche', sales: 334, stock: 45, category: 'Sourdough', tag: '' },
+    { id: 11, name: 'Pullman Loaf', sales: 456, stock: 23, category: 'Multigrain', tag: '' },
+    { id: 12, name: 'Soda Bread', sales: 1152, stock: 84, category: 'Whole Wheat', tag: '' },
+    { id: 13, name: 'Barmbrack', sales: 854, stock: 13, category: 'Sourdough', tag: '' },
+    { id: 14, name: 'Buccellato di Lucca', sales: 1298, stock: 212, category: 'Multigrain', tag: '' },
+    { id: 15, name: 'Toast Bread', sales: 2156, stock: 732, category: 'Multigrain', tag: '' },
+    { id: 16, name: 'Cheesymite Scroll', sales: 452, stock: 24, category: 'Sourdough', tag: '' },
+    { id: 17, name: 'Baguette', sales: 456, stock: 33, category: 'Sourdough', tag: '' },
+    { id: 18, name: 'Guernsey Gâche', sales: 1958, stock: 221, category: 'Multigrain', tag: '' },
+    { id: 19, name: 'Bazlama', sales: 858, stock: 34, category: 'Whole Wheat', tag: '' },
+    { id: 20, name: 'Bolillo', sales: 333, stock: 24, category: 'Whole Wheat', tag: '' },
+  ]);
 
-  useEffect(() => {
+   /* useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('http://127.0.0.1:8000/api/v01/entities');
@@ -34,9 +57,9 @@ const EditableRows = () => {
     };
   
     fetchData();
-  }, []);
+  }, []); */ 
 
-  const title = 'Entities';
+  const title = 'Historial de Operaciones';
   const description = 'Separate rows with edit, delete and add.';
 
   const breadcrumbs = [
@@ -87,6 +110,9 @@ const EditableRows = () => {
           );
         }
       },
+      { Header: 'Sales', accessor: 'sales', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
+      { Header: 'Stock', accessor: 'stock', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
+      { Header: 'Category', accessor: 'category', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },
       { Header: 'Surname', accessor: 'surname', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
       { Header: 'ID', accessor: 'dni', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-10' },
       { Header: 'Customer ID', accessor: 'customer_id', sortable: true, headerClassName: 'text-muted text-small text-uppercase w-20' },

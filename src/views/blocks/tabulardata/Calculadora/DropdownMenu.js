@@ -60,7 +60,7 @@ function DropdownMenu({ cambioValor, cambioMetodoPago, inputValue, inputOption, 
 
 
   return (
-    <div>
+    <div className='all2'>
       
   {/* Necesitamos un input numerico */}
   <input type="number" value={inputValue} onChange={handleInputChange} />

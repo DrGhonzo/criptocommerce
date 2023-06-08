@@ -35,8 +35,8 @@ export const DEFAULT_SETTINGS = {
 
 export const DEFAULT_USER = {
   id: 1,
-  name: 'Cristian Ardiles',
-  thumb: '/img/profile/profile-9.webp',
+  name: 'Franco Papetti',
+  thumb: '/criptocommerce/img/profile/profile-9.webp',
   role: USER_ROLE.Admin,
   email: 'lisajackson@gmail.com',
 };

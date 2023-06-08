@@ -204,7 +204,7 @@ html[data-placement="vertical"] {
     .logo {
       img,
       .img {
-        width: 100px;
+        width: 300px !important;
         min-height: 35px;
         object-position: left;
         object-fit: cover;
@@ -1493,4 +1493,19 @@ html[data-color="dark-purple"][data-navcolor="dark"] {
 .user-container .name {
   font-family: var(--font-heading);
   font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MARTIN */
+
+.headerlogo{
+  width: 150px !important;
 }
